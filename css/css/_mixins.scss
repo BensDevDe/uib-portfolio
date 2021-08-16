@@ -1,0 +1,23 @@
+@mixin flexBox($dir, $main, $cross) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $main;
+    align-items: $cross;
+}
+
+
+@mixin bgImg($url, $repeat: no-repeat, $position: center, $size: cover) {
+    background: $url $repeat $position/$size;
+}
+
+@mixin containerBox($w, $h, $bg-color) {
+    width: $w;
+    height: $h;
+    background-color: $bg-color;
+}
+
+@mixin shadow($type, $xWidth, $yWidth, $blurRad, $clr) {
+    #{$type}-shadow: $xWidth $yWidth $blurRad $clr;
+   
+}
+
